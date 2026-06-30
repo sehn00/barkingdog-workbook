@@ -29,7 +29,7 @@ main()
         // 여기까지 왔으면 경우는 둘 중 하나:
         //   1. S.top() == target  -> 원하는 숫자 pop() 가능
         //   2. S.top() != target  -> 중간에 다른 숫자가 막고 있어서 불가능
-        // (예) 스택에 3,4 가 남았는데, target=3 인 경우
+            // (예) 스택에 {3,4} 가 남았는데, target=3 인 경우
 
         if (!S.empty() && S.top() == target) {
             S.pop();
@@ -37,7 +37,6 @@ main()
         }
         else {
             cout << "NO" << '\n';
-
             return 0;   // NO 면 바로 리턴
         }
     }
