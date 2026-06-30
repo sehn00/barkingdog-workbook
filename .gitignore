@@ -67,3 +67,8 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# 실행파일 무시하기
+# boj_* 는 전부 ignore 하되, boj_*.cpp 는 다시 포함시키기
+boj_*
+!boj_*.cpp
